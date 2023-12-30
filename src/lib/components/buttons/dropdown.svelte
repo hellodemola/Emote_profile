@@ -10,7 +10,7 @@
 
 <button class={`py-[10px] px-[48px] rounded-full bg-[${bgColor}] text-primary flex gap-3 border border-[#DDDAD0] shadow shadow[0px_4px_4px_0px_rgba(0, 0, 0, 0.03)] justify-between`}>
 
-      <p class="">{label}</p>
+      <p>{label}</p>
       <img alt={alt} src={link}/>
       {#if isArr}
       <img alt="arrow" src="arrow_down.svg" />
