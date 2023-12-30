@@ -33,7 +33,7 @@ import Dropdown from "$lib/components/buttons/dropdown.svelte";
     {#each _allProfiles as profile}
     <div class="w-[5em]">
       <div class="w-[4em]">
-      <Avatar width="100em" url={profile?.avatarUrl} />
+      <Avatar width="100%" url={profile?.avatarUrl} />
       </div>
       <p class="text-primary text-center mt-2">{profile?.firstName} S.</p>
     </div>
@@ -199,18 +199,4 @@ import Dropdown from "$lib/components/buttons/dropdown.svelte";
 </div>
 
 </div>
-<div id="footer" class="bg-[#BFD962] py-[4em] items-center">
-  <Footer />
-  <div id="credit" class="flex justify-between my-[1em] mt-[2em] px-[4em] pt-[4em]">
-    <div class=" text-primary text-[1rem]">
-      <p>© 2023 emote Care. All rights reserved. </p>
-      <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-    </div>
-    <div id="social_media" class="flex gap items-center">
-      <img src="telegram_icon.svg" alt="telegram" />
-      <img src="twitter_icon.svg" alt="twitter" />
-      <img src="linkedIn.svg" alt="linkedIn" />
-    </div>
-  </div>
 
-</div>

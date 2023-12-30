@@ -68,7 +68,7 @@
        </p>
     </div>
      {/if}
-    <p class="text-blue cursor-pointer">View profile</p>
+    <a href="/profile" class="text-blue cursor-pointer">View profile</a>
     </div>
 
 </div>

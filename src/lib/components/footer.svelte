@@ -4,6 +4,9 @@
 
 </script>
 
+<div id="footer" class="bg-[#BFD962] py-[4em] items-center">
+
+
 <footer>
   <div class='p-4 px-[4em] flex justify-between items-center bg-[#BFD962]'>
     <div id="logo" class="text-center">
@@ -31,3 +34,17 @@
     </div>
   </div>
 </footer>
+
+<div id="credit" class="flex justify-between my-[1em] mt-[2em] px-[4em] pt-[4em]">
+    <div class=" text-primary text-[1rem]">
+      <p>© 2023 emote Care. All rights reserved. </p>
+      <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+    </div>
+    <div id="social_media" class="flex gap items-center">
+      <img src="telegram_icon.svg" alt="telegram" />
+      <img src="twitter_icon.svg" alt="twitter" />
+      <img src="linkedIn.svg" alt="linkedIn" />
+    </div>
+  </div>
+
+</div>

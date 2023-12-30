@@ -1,5 +1,6 @@
 <script>
-	import Nav from "$lib/components/nav.svelte";
+	import Footer from "$lib/components/footer.svelte";
+import Nav from "$lib/components/nav.svelte";
   import "../app.css";
   import '@fontsource/inter/500.css';
   import '@fontsource/poppins/400.css';
@@ -11,6 +12,7 @@
 
 <Nav/>
 <slot />
+<Footer/>
 
 <style>
   :global(body) {
