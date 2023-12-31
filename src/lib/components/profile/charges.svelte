@@ -1,7 +1,7 @@
 
 
             <div class="my-4">
-            <h2 class="text-primary font-medium text-lg">£64 GBP</h2>
+            <h2 class="text-primary text-lg">£64 GBP</h2>
             <p class="text-[#203136]">per session</p>
             </div>
             <div>
