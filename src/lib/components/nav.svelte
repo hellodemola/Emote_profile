@@ -16,7 +16,7 @@
     </div>
     <h1 class="text-[0.75rem] font-normal font-[inter]">emoteCare</h1>
   </div>
-  <div class='p-4 px-[4em] flex justify-between items-center'>
+  <div class='p-4 lg:px-[4em] flex justify-between items-center'>
     <a href="/" id="logo" class="text-center hover:text-blue">
         <span class="lg:text-[1.127rem] text-[0.813rem] font-normal block">emote</span>
         <span class="uppercase text-[0.438rem] lg:text-[0.648rem] font-bold block">care</span>
@@ -53,7 +53,7 @@
       <a href={'#'} class="">Login</a>
     </div>
     </div>
-    
+
   </div>
 
 
