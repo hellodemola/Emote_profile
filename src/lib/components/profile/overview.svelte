@@ -76,7 +76,7 @@
 
 
         <div class="col-span-4">
-        <div class="rounded-[16px] border border-[#F1F1F1] bg-white p-[32px] min:h-fit h-[20em] text-center shadow-md shadow-[rgba(0, 0, 0, 0.05)] my-2">
+        <div class="rounded-[16px] border border-[#F1F1F1] bg-white p-[32px] min:h-fit h-[20em] text-center shadow-md shadow-[rgba(0, 0, 0, 0.05)] my-2 flex flex-row justify-center items-center">
           <Charges />
         </div>
         </div>
