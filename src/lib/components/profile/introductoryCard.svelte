@@ -1,0 +1,28 @@
+<script>
+	import Avatar from "../avatar.svelte";
+    import _allProfiles from "./sample";
+
+</script>
+
+<div class="lg:p-[32px] p-2 rounded-[16px] lg:border lg:border-[#F1F1F1] lg:bg-white h-fit lg:shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] lg:my-8 my-2">
+  <p class="text-primary font-medium">30 second introduction videos</p>
+  <div class="my-4" />
+  <div id="avatar" class="flex gap-[32px] my-2 items-center">
+    <div id="" class="my-2 cursor-pointer">
+      <div class="bg-[#BFD962] rounded-full w-[80px] h-[80px] flex items-center justify-center">
+
+        <img alt="refresh" width="30px" class="m-auto" src="refresh.svg" />
+
+      </div>
+      <p class="text-primary text-center mt-2">Refresh</p>
+    </div>
+    {#each _allProfiles as profile}
+    <div class="my-2">
+      <div>
+      <Avatar url={profile?.avatarUrl} />
+      </div>
+      <p class="text-primary text-center mt-2">{profile?.firstName}</p>
+    </div>
+    {/each}
+  </div>
+ </div>

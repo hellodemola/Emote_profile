@@ -15,8 +15,8 @@ export default {
         'lg': '1.375rem'
       },
       fontWeight: {
-        light: 400,
-        normal: 500,
+        light: 300,
+        normal: 400,
         medium: 600,
         bold: 700,
       }

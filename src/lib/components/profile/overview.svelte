@@ -1,12 +1,13 @@
 <script>
 	import Avatar from "../avatar.svelte";
+	import Card from "../cards/card.svelte";
 	import Charges from "./charges.svelte";
     export let profileProps
 
 </script>
- <div class="grid grid-cols-12 grid-rows-1 grid-flow-col h-fit  my-4">
+ <div class="grid my-4 grid-cols-12">
         <div class="col-span-8">
-        <div class="p-[16px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)]">
+        <Card height="20em">
 
     <div id="header" class="flex justify-between">
     <div id="profile" class="flex m-3 gap-6 items-center">
@@ -31,7 +32,6 @@
         <p class="text-gray">{language}</p>
         {/each}
          {:else if profileProps?.demographic?.mainLanguage}
-
         <p class="text-gray">{profileProps?.demographic?.mainLanguage}</p>
         {:else}
         {/if}
@@ -47,7 +47,7 @@
     </div>
 
     <div id="profile_description" class="m-2 p-2">
-        <p class="text-primary">
+        <p class="text-primary font-light">
             {profileProps?.profile?.bio}
         </p>
     </div>
@@ -71,12 +71,14 @@
     <a href="/profile" class="text-blue cursor-pointer">View profile</a>
     </div>
 
-</div>
+        </Card>
 </div>
 
 
-        <div class="rounded-[16px] border border-[#F1F1F1] bg-white p-[32px] text-center col-span-4 items-center flex flex-col justify-center shadow-md shadow-[rgba(0, 0, 0, 0.05)]">
+        <div class="col-span-4">
+        <div class="rounded-[16px] border border-[#F1F1F1] bg-white p-[32px] min:h-fit h-[20em] text-center shadow-md shadow-[rgba(0, 0, 0, 0.05)] my-8">
           <Charges />
+        </div>
         </div>
 
 

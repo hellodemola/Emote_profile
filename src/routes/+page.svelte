@@ -1,47 +1,32 @@
 <script>
-	import Avatar from "$lib/components/avatar.svelte";
-import Dropdown from "$lib/components/buttons/dropdown.svelte";
-	import Footer from "$lib/components/footer.svelte";
+  import Avatar from "$lib/components/avatar.svelte";
+  import Dropdown from "$lib/components/buttons/dropdown.svelte";
+	import Card from "$lib/components/cards/card.svelte";
+	import IntroductoryCard from "$lib/components/profile/introductoryCard.svelte";
   import Overview from "$lib/components/profile/overview.svelte";
   import _allProfiles from "$lib/components/profile/sample";
 </script>
 
 
-<div class="bg-[#f9f7f5] w-screen h-full p-12">
-<div class="grid-cols-6 grid gap-6">
-  <div class="col-span-4">
-  <div class="flex gap-3 items-center justify-between 5px">
+<div class="bg-[#f9f7f5] w-screen h-full lg:px-16 px-4 py-12">
+<div class="grid-cols-6 lg:grid gap-6">
+
+  <div class="col-span-4 mb-2">
+  <div class="lg:flex gap-3 items-center justify-between 5px">
   <h1 class="font-medium text-[1.25rem] text-primary">Let’s discover your next therapist</h1>
+  <div class="my-2 lg:my-0 grid grid-cols-2 gap-4 justify-between lg:block">
   <Dropdown
-    label="Sort by: Year of experience"
-    bgColor="#fff"
+    label="Sort by"
     alt="dropdown"
-    link="dropdown_icon.svg"
     isArr
   />
+  <div class="lg:hidden">
+  <Dropdown label="Filter by" />
+  </div>
+  </div>
 </div>
 
- <div class="p-[20px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] my-4">
-  <p class="text-primary font-medium">30 second introduction videos</p>
-  <div id="avatar" class="flex gap-4 my-2 items-baseline">
-    <div id="" class="my-2 cursor-pointer">
-      <div class="bg-[#BFD962] p-4 rounded-full">
-        <img alt="refresh" width="100%" src="refresh.svg" />
-      </div>
-      <p class="text-primary text-center mt-2">Refresh</p>
-    </div>
-    {#each _allProfiles as profile}
-    <div class="w-[5em]">
-      <div class="w-[4em]">
-      <Avatar width="100%" url={profile?.avatarUrl} />
-      </div>
-      <p class="text-primary text-center mt-2">{profile?.firstName} S.</p>
-    </div>
-    {/each}
-  </div>
- </div>
-
-
+  <IntroductoryCard />
   {#each _allProfiles as profile}
         <Overview profileProps={profile} />
   {/each}
@@ -50,14 +35,11 @@ import Dropdown from "$lib/components/buttons/dropdown.svelte";
 
 <div class="w-[100%] col-span-2">
     <div class="flex justify-between items-baseline w-full">
-      <Dropdown
-    label="Filter by"
-    bgColor="#fff"
-  />
+    <Dropdown label="Filter by" />
   <h2>Clear all</h2>
     </div>
 
-    <div class="p-[20px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] my-4">
+    <div class="p-[20px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] my-8">
     <div id="appointmentType">
       <div id="header" class="flex justify-between item">
         <h1 class="text-primary font-medium">Appointment Type</h1>
@@ -199,4 +181,3 @@ import Dropdown from "$lib/components/buttons/dropdown.svelte";
 </div>
 
 </div>
-

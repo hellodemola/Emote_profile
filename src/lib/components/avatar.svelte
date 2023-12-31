@@ -1,11 +1,11 @@
 <script>
     export let hasIntroVideo = true
     export let url = ""
-    export let width = "6em"
+    export let width = '80px'
 </script>
 
-<div id="avatar" class="relative">
-    <div class={`w-[${width}]`}>
+<div id="avatar" style:width={width} class="relative w-fit">
+    <div class="">
     <img
     alt="user avatar"
     src={url}
