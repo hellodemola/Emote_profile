@@ -12,14 +12,14 @@
   <div id="top_nav" class="text-center lg:flex justify-center gap-2 items-center h-[32px] border-t border-b border-t-[#DDDAD0] border-b-[#DDDAD0] bg-white hidden">
     <div>
     <p class="text-[0.458rem] font-normal">emote</p>
-    <p class="uppercase text-[0.263rem] font-bold">care</p>
+    <p class="uppercase text-[0.263rem] font-bold tracking-wide">care</p>
     </div>
-    <h1 class="text-[0.75rem] font-normal font-[inter]">emoteCare</h1>
+    <h1 class="text-[0.75rem] font-normal font-[inter] text-[#4C4C4C]">emoteCare</h1>
   </div>
   <div class='p-4 lg:px-[4em] flex justify-between items-center'>
     <a href="/" id="logo" class="text-center hover:text-blue">
         <span class="lg:text-[1.127rem] text-[0.813rem] font-normal block">emote</span>
-        <span class="uppercase text-[0.438rem] lg:text-[0.648rem] font-bold block">care</span>
+        <span class="uppercase text-[0.438rem] lg:text-[0.648rem] font-bold block tracking-[1.4px] lg:tracking-[2.074px]">care</span>
     </a>
 
     <!-- Icons for mobile screen -->
@@ -30,7 +30,7 @@
     </div>
     <!--End of comment for Icon for mobile screen-->
 
-    <div id="menu" class="lg:flex hidden gap-4">
+    <div id="menu" class="lg:flex hidden gap-8">
     {#each menus as menu}
       <a href={"#"} class="font-normal text-[#000] text-[1rem] hover:text-blue">{menu}</a>
     {/each}
