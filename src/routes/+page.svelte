@@ -39,7 +39,7 @@
   <h2>Clear all</h2>
     </div>
 
-    <div class="p-[20px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] my-8 lg:hidden">
+    <div class="p-[20px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] my-8 hidden lg:block">
     <div id="appointmentType">
       <div id="header" class="flex justify-between item">
         <h1 class="text-primary font-medium">Appointment Type</h1>
