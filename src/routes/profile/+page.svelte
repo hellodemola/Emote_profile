@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Avatar from "$lib/components/avatar.svelte";
 	import Dropdown from "$lib/components/buttons/dropdown.svelte";
     const identities = ['Female', 'Cisgender', 'Atheist', 'White'];
@@ -45,7 +45,7 @@ let rating = [
     { title: 'Authenticity Architect', score: '250' },
 ];
 
-let choseColor = (score) => {
+let choseColor = (score: string) => {
 
     if (score === '500+'){
       return  {
@@ -61,7 +61,7 @@ let choseColor = (score) => {
             textColor: '#203136',
             bgColor: '#FDBD48'
         }
-        if (score === '10') return  {
+        if (score === '250') return  {
             textColor: '#fff',
             bgColor: '#425DB6'
         }
@@ -241,7 +241,7 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
                 <h3 class="text-primary font-medium text-[1.125rem] my-4">Client focus</h3>
                 <div class="">
                     {#each clientFocus as focus (focus.color)}
-                    <div class={`flex flex-col gap-2 border-l-[6px]  border-[${focus?.color}] my-2 p-4 text-primary`}>
+                    <div style:border-left={`5px solid ${focus?.color}`} class={`flex flex-col gap-2 border-l-[6px]  border-[${focus?.color}] my-2 p-4 text-primary`}>
                         <h4 class="font-medium text-[18px] capitalize">{focus.title}</h4>
                         <p class="">{focus.label}</p>
                     </div>
@@ -268,10 +268,10 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
                         <div class="w-full">
                             <div class="w-full my-5 flex justify-center">
                                 <div class="relative">
-                                <div class={`rounded-full w-[7em] h-[7em] border-[5px] border-[${choseColor(rate.score)?.bgColor}]`}/>
-                                <div class={`bg-[${choseColor(rate.score)?.bgColor}] rounded-full h-[2.5em] w-[2.5em] p-3 b-3 b-[#fff] flex items-center justify-center absolute bottom-0 right-0`}>
+                                <div style:border={`5px solid ${choseColor(rate.score)?.bgColor}`} class="rounded-full w-[7em] h-[7em] border-[5px]"/>
+                                <div style:background={choseColor(rate.score)?.bgColor} class="rounded-full h-[2.5em] w-[2.5em] p-3 b-3 b-[#fff] flex items-center justify-center absolute bottom-0 right-0">
 
-                                    <p class={`text-[12px] text-[${choseColor(rate.score)?.textColor}]`}>{rate.score}</p>
+                                    <p style:color={choseColor(rate.score)?.textColor} class="text-[12px]">{rate.score}</p>
                                     </div>
                                 </div>
                             </div>

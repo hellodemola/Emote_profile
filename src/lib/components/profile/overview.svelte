@@ -1,8 +1,8 @@
-<script>
+<script lang='ts'>
 	import Avatar from "../avatar.svelte";
 	import Card from "../cards/card.svelte";
 	import Charges from "./charges.svelte";
-    export let profileProps
+    export let profileProps: any
 
 </script>
  <div class="grid my-4 grid-cols-12">
@@ -22,7 +22,7 @@
     <div id="locale" class="flex gap-4 items-center">
         <div class="flex gap-2">
         <img src="location_icon.svg" alt="location" />
-        <p class="text-gray"> {profileProps?.profile?.country}, GMT -7</p>
+        <p class="text-gray"> {profileProps?.demographic?.location}, GMT -7</p>
         </div>
         <div class="flex gap-2 items-center">
         <img src="globle.svg" alt="location" />
