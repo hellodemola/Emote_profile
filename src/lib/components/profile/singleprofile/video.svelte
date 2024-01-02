@@ -7,7 +7,7 @@
 
 <style>
     .bg{
-        background-image: url('bg_img.jpeg');
+        background-image: url(bg_img.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
     }
