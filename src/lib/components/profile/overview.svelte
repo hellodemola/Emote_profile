@@ -24,17 +24,17 @@
     <div id="locale" class="flex my-1 lg:my-0 lg:gap-4 gap-2 items-center">
         <div class="flex lg:gap-2 gap-1 items-center">
         <img src="location_icon.svg" alt="location" />
-        <p class="text-gray text-[12px] lg:text-[1rem]"> {profileProps?.demographic?.location}, GMT -7</p>
+        <p class="text-gray text-[12px] lg:text-[14px]"> {profileProps?.demographic?.location}, GMT -7</p>
         </div>
         <div class="flex lg:gap-2 gap-1 items-center">
         <img src="globle.svg" alt="location" />
         {#if profileProps?.demographic?.mainLanguage
         && Array.isArray(profileProps?.demographic?.mainLanguage)}
         {#each profileProps?.demographic?.mainLanguage as language }
-        <p class="text-gray text-[12px] lg:text-[1rem]">{language}</p>
+        <p class="text-gray text-[12px] lg:text-[14px]">{language}</p>
         {/each}
          {:else if profileProps?.demographic?.mainLanguage}
-        <p class="text-gray">{profileProps?.demographic?.mainLanguage}</p>
+        <p class="text-gray text-[12px] lg:text-[14px]">{profileProps?.demographic?.mainLanguage}</p>
         {:else}
         {/if}
 
@@ -57,7 +57,7 @@
     <div id="grid" class="lg:flex gap-4 p-2 lg:m-2 items-center">
         <div class="flex gap-2 items-center">
        {#if Array.isArray(profileProps?.profile.therapyAreas)}
-    <div id="tag" class="rounded-[16px] lg:bg-[#ECF2D5] p-2 px-4 w-fit my-2 lg:my-0 bg-[#F1F1F1]">
+    <div id="tag" class="rounded-[16px] lg:bg-[#ECF2D5] font-light p-2 px-4 w-fit my-2 lg:my-0 bg-[#F1F1F1]">
 
        <p class="text-primary text-[12px] lg:text-[1rem]">
         {Array.isArray(profileProps?.profile.therapyAreas) && profileProps?.profile.therapyAreas[0]}
