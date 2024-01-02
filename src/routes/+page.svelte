@@ -6,7 +6,7 @@
 	import IntroductoryCard from "$lib/components/profile/introductoryCard.svelte";
   import Overview from "$lib/components/profile/overview.svelte";
   import _allProfiles from "$lib/components/profile/sample";
- 
+
   const countries = [
     { label: 'UK', countryCode: 'GB', alt: 'united kindgom' },
     { label: 'Spain', countryCode: 'ES', alt: 'united kindgom' },
@@ -170,7 +170,7 @@
         <img src="arrow_down.svg" alt="dropdown" />
       </div>
       <div class="grid grid-cols-3 gap-4">
-        {#each languages as language(language.id)}
+        {#each languages as language}
         <SelectButton>
          {language.lang}
         </SelectButton>

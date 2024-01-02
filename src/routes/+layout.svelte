@@ -17,6 +17,6 @@
   :global(body) {
     font-family: 'Poppins', sans-serif;
     color: '#203136';
-    font-weight: 400;
+    font-weight: 500;
   }
 </style>
