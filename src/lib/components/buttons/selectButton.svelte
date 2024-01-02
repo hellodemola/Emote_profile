@@ -8,8 +8,11 @@
         } else {
             color = '#203136';
         }
-        if (background === '#BFD962') return background = '#fff';
-        return background = '#BFD962';
+        if (background === '#BFD962'){
+            background = '#fff'
+        } else {
+            background = '#BFD962';
+        }
     };
 </script>
 

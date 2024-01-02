@@ -4,18 +4,18 @@
 
 </script>
 
-<div id="footer" class="bg-[#BFD962] py-[4em] items-center">
+<div id="footer" class="bg-[#BFD962] py-[2em] items-center">
 
 
 <footer>
   <div class='p-4 px-[4em] flex justify-between items-center bg-[#BFD962]'>
     <div id="logo" class="text-center">
-        <p class="text-[1.127rem] font-normal">emote</p>
-        <p class="uppercase text-[0.648rem] font-bold">care</p>
+        <p class="text-[0.458rem] lg:text-[2.407rem] font-normal text-primary leading-[48.146px]">emote</p>
+        <p class="uppercase text-primary text-[1.384rem] font-bold tracking-[4.429px] leading-[30.091px]">care</p>
     </div>
     <div id="menu" class="flex gap-4">
     {#each menus as menu}
-      <a href="#" class="font-normal text-[#000] text-[1rem]">{menu}</a>
+      <a href="/" class="font-normal text-primary text-[1.125rem]">{menu}</a>
     {/each}
     </div>
     <div class="flex gap-5 items-center">
@@ -35,10 +35,10 @@
   </div>
 </footer>
 
-<div id="credit" class="flex justify-between my-[1em] mt-[2em] px-[4em] pt-[4em]">
-    <div class=" text-primary text-[1rem]">
-      <p>© 2023 emote Care. All rights reserved. </p>
-      <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+<div id="credit" class="flex justify-between my-[1em] mt-[2em] px-[4em] pt-[2em]">
+    <div class=" text-primary text-[1.125rem] font-light font-[inter]">
+      <p class="leading-[28px]">© 2023 emote Care. All rights reserved. </p>
+      <p class="leading-[28px]">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
     </div>
     <div id="social_media" class="flex gap items-center">
       <img src="telegram_icon.svg" alt="telegram" />
