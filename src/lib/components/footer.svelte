@@ -8,7 +8,7 @@
 
 
 <footer>
-  <div class='p-4 px-[4em] lg:flex justify-between items-center bg-[#BFD962]'>
+  <div class='p-4 lg:px-[4em] lg:flex justify-between items-center bg-[#BFD962]'>
     <div id="logo" class="lg:text-center my-6 lg:my-0">
         <p class="lg:text-[2.407rem] font-normal text-primary lg:leading-[48.146px] uppercase tracking-wide text-md">emote</p>
         <p class="uppercase text-primary text-[1.384rem] font-bold lg:tracking-[4.429px] lg:leading-[30.091px]">care</p>
@@ -35,7 +35,7 @@
   </div>
 </footer>
 
-<div id="credit" class="lg:flex justify-between my-[1em] lg:mt-[2em] px-[4em] pt-[2em]">
+<div id="credit" class="lg:flex justify-between my-[1em] lg:mt-[2em] lg:px-[4em] p-4 lg:pt-[2em]">
     <div class=" text-primary text-[1.125rem] font-light font-[inter]">
       <p class="lg:leading-[28px]">© 2023 emote Care. All rights reserved. </p>
       <p class="lg:leading-[28px]">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>

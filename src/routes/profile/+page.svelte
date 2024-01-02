@@ -77,8 +77,8 @@ const time = ['9.00', '10.00', '11.00', '12.00', '13.00', '14.00'];
 
 
 </script>
-<div class="bg-[#f9f7f5] w-screen h-full p-12">
-    <div class="grid grid-cols-6 gap-6">
+<div class="bg-[#f9f7f5] w-screen h-full lg:p-12 p-3">
+    <div class="lg:grid grid-cols-6 gap-6">
         <div class="col-span-4">
             <div class="p-[18px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)]">
                 <div class="flex justify-between items-center my-6 py-3" >
@@ -149,9 +149,9 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
             <img src="arrow_down.svg" alt="arrow" />
             </div>
 
-            <div class="flex gap-4">
+            <div class="flex text-[12px] lg:text-[1rem] my-2 lg:my-0 gap-2 lg:gap-4">
             {#each identities as identity}
-             <div class="rounded-full bg-[#F1F1F1] w-fit p-6 py-3 cursor-pointer">
+             <div class="rounded-full bg-[#F1F1F1] w-fit lg:p-6 lg:py-3 p-2 cursor-pointer">
                 <p class="text-primary">{identity}</p>
             </div>
             {/each}
@@ -159,11 +159,11 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
 
             <div class="border border-[#F1F1F1] my-[3em]" />
 
-            <div class="my-[2em]">
+            <div class="lg:my-[2em]">
                 <h3 class="text-primary font-medium text-[1.125rem]">Specialities and expertise</h3>
-                <div class="flex gap-4 my-[2em]">
+                <div class="flex text-[12px] lg:text-[1rem] my-2 lg:my-0 gap-2 lg:gap-4">
             {#each experises as expertise}
-             <div class="rounded-full bg-[#F1F1F1] w-fit p-6 py-3 cursor-pointer">
+             <div class="rounded-full bg-[#F1F1F1] w-fit lg:p-6 lg:py-3 p-2 cursor-pointer">
                 <p class="text-primary">{expertise}</p>
             </div>
             {/each}
@@ -174,7 +174,7 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
             <div class="border border-[#F1F1F1] my-[3em]" />
 
             <div class="my-[2em]">
-                <div class="flex justify-between">
+                <div class="lg:flex justify-between">
                 <h3 class="text-primary font-medium text-[1.125rem]">Types of therapy</h3>
                 <div>
                 <div class="flex gap-2 items-center text-[14px]">
@@ -183,9 +183,9 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
                 </div>
                 </div>
                 </div>
-                <div class="flex gap-4 my-[2em]">
+                <div class="lg:flex gap-4 my-[2em]">
             {#each theories as theory}
-             <div class="rounded-full bg-[#F1F1F1] w-fit p-6 py-2 cursor-pointer underline">
+             <div class="rounded-full lg:bg-[#F1F1F1] w-fit lg:p-6 py-2 cursor-pointer underline">
                 <p class="text-primary">{theory}</p>
             </div>
             {/each}
@@ -195,7 +195,7 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
 
             </div>
 
-            <div id="grid" class="grid grid-cols-4 gap-6">
+            <div id="grid" class="grid lg:grid-cols-4 grid-cols-2 gap-6">
              {#each metrics as stats}
                 <div class="p-[18px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)]">
 
@@ -216,8 +216,8 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
                    {#each rates as rate}
                 <div class="flex justify-between my-6">
                 <div class="w-full grid grid-cols-6">
-                    <div class="w-full col-span-1">
-                        <div class="bg-primary rounded-full w-fit p-4 py-2 text-white">
+                    <div class="w-full col-span-1  lg:display hidden">
+                        <div class="bg-primary rounded-full w-fit p-4 py-2 text-whit">
                     <p>{rate.age}</p>
 
                         </div>
@@ -262,7 +262,7 @@ In our sessions, I provide a safe and non-judgmental space for you to explore yo
 
              <div class="p-[18px] rounded-[16px] border border-[#F1F1F1] bg-white h-fit shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] my-6">
                 <h3 class="text-primary font-medium text-[1.125rem] my-4">Ratings</h3>
-                <div class="grid grid-cols-4">
+                <div class="lg:grid grid-cols-4 flex overflow-auto gap-4">
                     {#each rating as rate}
                     <div class="rounded w-full">
                         <div class="w-full">
