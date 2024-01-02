@@ -40,7 +40,7 @@
       <p class="lg:leading-[28px]">© 2023 emote Care. All rights reserved. </p>
       <p class="lg:leading-[28px]">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
     </div>
-    <div id="social_media" class="flex gap items-center">
+    <div id="social_media" class="flex gap items-center my-3 lg:my-0 justify-center lg:justify-normal">
       <img src="telegram_icon.svg" alt="telegram" />
       <img src="twitter_icon.svg" alt="twitter" />
       <img src="linkedIn.svg" alt="linkedIn" />
