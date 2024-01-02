@@ -6,7 +6,7 @@
 	import IntroductoryCard from "$lib/components/profile/introductoryCard.svelte";
   import Overview from "$lib/components/profile/overview.svelte";
   import _allProfiles from "$lib/components/profile/sample";
-  import "/node_modules/flag-icons/css/flag-icons.min.css";
+ 
   const countries = [
     { label: 'UK', countryCode: 'GB', alt: 'united kindgom' },
     { label: 'Spain', countryCode: 'ES', alt: 'united kindgom' },
