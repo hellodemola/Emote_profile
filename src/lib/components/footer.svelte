@@ -10,7 +10,7 @@
 <footer>
   <div class='p-4 lg:px-[4em] lg:flex justify-between items-center bg-[#BFD962]'>
     <div id="logo" class="lg:text-center my-6 lg:my-0">
-        <p class="lg:text-[2.407rem] font-normal text-primary lg:leading-[48.146px] uppercase tracking-wide text-md">emote</p>
+        <p class="lg:text-[2.407rem] font-normal text-primary lg:leading-[48.146px] tracking-wide text-md">emote</p>
         <p class="uppercase text-primary text-[1.384rem] font-bold lg:tracking-[4.429px] lg:leading-[30.091px]">care</p>
     </div>
     <div id="menu" class="lg:flex gap-4 lg:my-0">
