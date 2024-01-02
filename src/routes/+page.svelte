@@ -25,7 +25,7 @@
     <Overview profileProps={profile} />
   {/each}
 </div>
-<div class="w-[100%] col-span-2">
+<div class="col-span-2 hidden lg:block">
   <Filter />
 </div>
 

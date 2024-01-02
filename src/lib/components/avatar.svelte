@@ -4,7 +4,7 @@
     export let width = '80px'
 </script>
 
-<div id="avatar" style:width={width} class="relative w-fit">
+<div id="avatar" class="relative lg:w-[80px] w-[60px]">
     <div class="">
     <img
     alt="user avatar"
@@ -17,7 +17,7 @@
     <div class="absolute bottom-0 right-0 cursor-pointer">
     <img alt="play video"
     src="play_icon.svg"
-    width="100%"
+    class="lg:w-[100%] w-[1em]"
     />
     </div>
     {/if}

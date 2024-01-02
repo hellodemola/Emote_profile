@@ -170,7 +170,7 @@ const _allProfiles = [
         "pass": "$argon2id$v=19$m=19456,t=2,p=1$N0ZR1oR0bxaJ9XS5oDEO9g$3vUZvT+YIMGJKSc5y169ktRjuXNQ2gs2fE7OOM6L83A",
         "phoneNumber": "+6112341234",
         "profile": {
-            "bio": "“Specializing in grief and loss, offering person-centered and expressive arts therapy for healing.",
+            "bio": "Specializing in grief and loss, offering person-centered and expressive arts therapy for healing.",
             "qualifications": [],
             "therapyAreas": [
                 "Play Therapy for Children",
@@ -386,7 +386,7 @@ const _allProfiles = [
         "pass": "$argon2id$v=19$m=19456,t=2,p=1$N0ZR1oR0bxaJ9XS5oDEO9g$3vUZvT+YIMGJKSc5y169ktRjuXNQ2gs2fE7OOM6L83A",
         "phoneNumber": "+6112341234",
         "profile": {
-            "bio": "“Specializing in grief and loss, offering person-centered and expressive arts therapy for healing.",
+            "bio": "Specializing in grief and loss, offering person-centered and expressive arts therapy for healing.",
             "qualifications": [],
             "therapyAreas": [
                 "Play Therapy for Children",
@@ -453,7 +453,7 @@ const _allProfiles = [
         "pass": "$argon2id$v=19$m=19456,t=2,p=1$+wzsf+1+9yjS3zw0zY+3tw$ppoKHAgYCIQtMdhmRi1z+KhZtEeaKhq04NpbX9yV92Q",
         "phoneNumber": "+61890",
         "profile": {
-            "bio": "“Specializing in grief and loss, offering person-centered and expressive arts therapy for healing",
+            "bio": "Specializing in grief and loss, offering person-centered and expressive arts therapy for healing",
             "qualifications": [],
             "therapyAreas": [
                 "Play Therapy for Children",
