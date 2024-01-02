@@ -1,22 +1,25 @@
-# create-svelte
+# Emote technical task (_in Svelte_)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A user profile browsing and filtering page.
 
-## Creating a project
+For the filtering page; it allows users to view a list of profiles and filter them according to specific criteria.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Starting the project
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# To start, the project needs to be built with this command
+npm run build
 
-# create a new project in my-app
-npm create svelte@latest my-app
+
+# or with yarn
+yarn build
 ```
+
+You can preview the production build with `npm run preview`.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+In case, you want to continue developing, you need to run this command
 
 ```bash
 npm run dev
@@ -25,14 +28,6 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To view the deployed app, please visit:
+(https://emote-care.vercel.app/)

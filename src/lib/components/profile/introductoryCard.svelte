@@ -29,7 +29,7 @@
 
     </div>
     {/each}
-    <div class="absolute right-0 cursor-pointer top-1/4">
+    <div class="absolute right-0 cursor-pointer top-1/4 hidden">
       <img alt="overflow_icon" src="overviewIcon.svg" />
     </div>
   </div>
