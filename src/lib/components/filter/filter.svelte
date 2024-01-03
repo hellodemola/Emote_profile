@@ -9,8 +9,8 @@
 	import ByPrice from "./byPrice.svelte";
 	import BySex from "./bySex.svelte";
 	import ByTherapistType from "./byTherapistType.svelte";
-
 </script>
+
   <div class="flex justify-between items-baseline w-full">
     <Dropdown label="Filter by" />
   <h2>Clear all</h2>

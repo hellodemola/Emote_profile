@@ -1,8 +1,12 @@
-<script>
+<script lang="ts">
+  interface IProfile {
+    avatarUrl: string,
+    firstName: string,
+    lastName: string,
+  };
 	import firstLettter from "$lib/helpers/firstLetter";
 	import Avatar from "../avatar.svelte";
-    import _allProfiles from "./sample";
-
+  export let allProfiles: IProfile[] = [];
 </script>
 
 <div class="lg:p-[32px] p-2 rounded-[16px] lg:border lg:border-[#F1F1F1] lg:bg-white h-fit lg:shadow-md shadow-[0_40px_40px_0px_rgba(0, 0, 0, 0.05)] lg:my-8 my-2">
@@ -17,7 +21,7 @@
       </div>
       <p class="text-primary text-center mt-2">Refresh</p>
     </div>
-    {#each _allProfiles as profile}
+    {#each allProfiles as profile}
     <div class="my-2">
       <div>
       <Avatar url={profile?.avatarUrl} />

@@ -1,9 +1,31 @@
-<script>
+<script lang="ts">
   import Dropdown from "$lib/components/buttons/dropdown.svelte";
 	import Filter from "$lib/components/filter/filter.svelte";
 	import IntroductoryCard from "$lib/components/profile/introductoryCard.svelte";
   import Overview from "$lib/components/profile/overview.svelte";
   import _allProfiles from "$lib/components/profile/sample";
+  import { countryStore } from "./store";
+
+  // filter
+  let filterElement = '';
+  let filteredData:any = [];
+
+  countryStore.subscribe((value) => {
+    filterElement = value?.country;
+    getFilterData();
+  })
+
+  function getFilterData () {
+    if (filterElement){
+      return filteredData = _allProfiles.filter((profile) => {
+        return profile.demographic.location.toLowerCase().includes(filterElement.toLocaleLowerCase());
+      })
+    } else {
+      return filteredData = [];
+    }
+  }
+
+
 </script>
 
 
@@ -20,10 +42,19 @@
   </div>
   </div>
 </div>
-<IntroductoryCard />
+  {#if filteredData?.length > 0}
+   <IntroductoryCard allProfiles={filteredData} />
+  {#each filteredData as profile}
+    <Overview profileProps={profile} />
+  {/each}
+  {:else if filterElement && filteredData.length === 0}
+   No data found for "{filterElement}"
+  {:else}
+    <IntroductoryCard allProfiles={_allProfiles} />
   {#each _allProfiles as profile}
     <Overview profileProps={profile} />
   {/each}
+  {/if}
 </div>
 <div class="col-span-2 hidden lg:block">
   <Filter />
