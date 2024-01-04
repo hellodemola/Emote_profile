@@ -28,6 +28,5 @@ npm run dev
 npm run dev -- --open
 ```
 
-
 > To view the deployed app, please visit:
-(https://emote-care.vercel.app/)
+> (https://emote-care.vercel.app/)
